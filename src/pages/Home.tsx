@@ -6,6 +6,9 @@ import Feature from "./Feature.tsx"
 import ChooseUs from "./Choose us.tsx"
 import Logo from "./Logo.tsx"
 import Faq from "./Faq.tsx"
+import {Hero} from "./Hero.tsx"
+import Subscribe from "../pages/Subscribe.tsx"
+import Testimonial from "../pages/Testimonial.tsx"
 import {
   Carousel,
   CarouselContent,
@@ -54,28 +57,26 @@ export default function HeroCarousel() {
         {/* Text Content */}
         <div className="relative z-10 flex flex-col items-center justify-center h-full text-white px-6 text-center">
           <div className="max-w-2xl">
-            <h2 className="text-3xl text-lime-100 font-semibold tracking-tight sm:text-5xl">
-              Boost your productivity. Start using our app today.
+            <h2 className="text-2xl text-lime-100 mt-2.5 font-semibold tracking-tight sm:text-4xl">
+              Empowering smallholder farmers with access to buyers, fair pricing, and modern agricultural insights.
             </h2>
             <p className="mt-6 text-lg text-gray-200">
-              Ac euismod vel sit maecenas id pellentesque eu sed consectetur.
-              Malesuada adipiscing sagittis vel nulla.
+              To connect Africa’s farmers to profitable markets, ensure transparency in pricing, and promote sustainable farming practices through technology.
             </p>
             <div className="mt-10 flex justify-center gap-x-6">
               <a
                 href="#"
                 className="rounded-md bg-yellow-200 px-5 py-3 text-sm font-semibold text-white hover:bg-lime-200 focus-visible:outline  focus-visible:outline-offset-2 focus-visible:outline-white"
               >
-                Get started
+                Join as Farmer
               </a>
             </div>
           </div>
         </div>
       </section>
 
-      {/* FEATURES SECTION — OUTSIDE HERO */}
+      {/* FEATURES SECTION — OUTSIDE HERO 
       <section className="w-full flex flex-col sm:flex-row items-stretch justify-center mt-8 space-y-6 sm:space-y-0 sm:space-x-8 text-gray-800 text-left px-6 max-w-5xl mx-auto">
-        {/* Feature 1 */}
         <div className="flex-1 bg-gray-100 rounded-xl p-6 hover:bg-gray-200 transition duration-300 shadow-md">
           <div className="text-3xl font-bold text-gray-900 mb-2">01</div>
           <h3 className="text-lg font-semibold">Fast & Easy Setup</h3>
@@ -90,7 +91,7 @@ export default function HeroCarousel() {
               />
         </div>
 
-        {/* Feature 2 */}
+        
         <div className="flex-1 bg-gray-100 rounded-xl p-6 hover:bg-gray-200 transition duration-300 shadow-md">
           <div className="text-3xl font-bold text-gray-900 mb-2">02</div>
           <h3 className="text-lg font-semibold">Cloud Sync</h3>
@@ -105,7 +106,7 @@ export default function HeroCarousel() {
               />
         </div>
 
-        {/* Feature 3 */}
+     
         <div className="flex-1 bg-gray-100 rounded-xl p-6 hover:bg-gray-200 transition duration-300 shadow-md">
           <div className="text-3xl font-bold text-gray-900 mb-2">03</div>
           <h3 className="text-lg font-semibold">Smart Analytics</h3>
@@ -119,10 +120,13 @@ export default function HeroCarousel() {
                 className="h-8 w-auto"
               />
         </div>
-      </section>
+      </section>*/}
+      <Hero/>
       <Feature />
       <Logo />
       <ChooseUs />
+      <Subscribe />
+      <Testimonial/>
       <Faq />
     </>
   )

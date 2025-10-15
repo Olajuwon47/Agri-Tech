@@ -1,98 +1,211 @@
-import {  } from 'react';
-//import Team from '../Pages/Team.tsx';
+import { } from 'react';
+// import Team from '../Pages/Team.tsx';
 
-export default function About() {
+export default function AboutAgroPulse() {
+   const steps = [
+    {
+      title: "1. Join as a Farmer or Buyer",
+      description:
+        "Create your free AgroPulse account. Farmers gain modern tools, while buyers discover verified produce sources.",
+    },
+    {
+      title: "2. Create Your Digital Farm Profile",
+      description:
+        "List your crops, farm size, and location. AgroPulse uses this data to match you with market demand and insights.",
+    },
+    {
+      title: "3. Access Smart Insights",
+      description:
+        "Receive weather forecasts, soil health tips, and IoT-powered analytics to improve your yields and planning.",
+    },
+  ];
+
+   const farmers = [
+    {
+      name: "Sarah Johnson",
+      role: "Organic Farmer",
+      quote: "AgroPulse transformed how I manage my farm. The insights helped increase my yield by 30%.",
+      image: "/assets/farmer1.jpg"
+    },
+    {
+      name: "Mike Chen",
+      role: "Buyer",
+      quote: "Finding verified sustainable farms has never been easier. Great platform for conscious buyers.",
+      image: "/assets/buyer1.jpg"
+    }
+  ];
   return (
     <>
-    <section className="bg-white text-gray-800 px-10 py-16 max-md:px-6 max-sm:px-4">
-      {/* Hero Section */}
-      <div className="text-center mb-16">
-        <h1 className="text-4xl font-bold mb-4 max-sm:text-2xl max-md:text-3xl">About ExploreMore Travels</h1>
-        <p className="text-lg text-gray-600 max-sm:text-base">
-          Crafting journeys that stir the soul, ignite wonder, and make the world feel a little smaller.
-        </p>
-      </div>
+      <section className="bg-gray-50 py-20">
+      <div className="max-w-6xl mx-auto px-6 lg:px-8">
+        {/* Header */}
+             <div className="relative mb-16">
+          {/* Background Image */}
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-deoFxM4uZNUSsGcVeisFdqIe5PGBas5kLQ&s"
+            alt="Service Banner"
+            className="w-full h-52"
+          />
+    
 
-      {/* Image & Story */}
-      <div className="grid grid-cols-2 gap-10 items-center max-md:grid-cols-1">
-        <img
-          src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=80"
-          alt="Travel Adventure"
-          className="rounded-2xl shadow-lg w-full h-50 object-cover max-sm:h-64 max-md:h-80"
-        />
-        <div>
-          <h2 className="text-2xl font-semibold mb-4 max-sm:text-xl">Our Story</h2>
-          <p className="text-gray-700 text-base leading-relaxed max-sm:text-sm">
-            Founded on the belief that travel should be enriching, affordable, and accessible, ExploreMore started as a humble dream — a desire to connect people with places.
-            Over the years, we've grown into a global community of dreamers, adventurers, and seekers of hidden gems.
-            Whether you're scaling the Alps or strolling through Santorini, we are here to make every trip seamless and unforgettable.
-          </p>
-        </div>
-      </div>
+          {/* Overlay for readability */}
+          <div className="absolute inset-0 bg-black/40 rounded-2xl"></div>
 
-      {/* Mission Section */}
-      <div className="mt-20 grid grid-cols-2 gap-10 items-center max-md:grid-cols-1">
-        <div>
-          <h2 className="text-2xl font-semibold mb-4 max-sm:text-xl">Our Mission</h2>
-          <p className="text-gray-700 text-base leading-relaxed max-sm:text-sm">
-            To empower every individual to travel with confidence, curiosity, and connection. Through personalized service, curated experiences, and responsible tourism,
-            we strive to make the world more accessible — one trip at a time.
-          </p>
-        </div>
-        <img
-          src="https://images.unsplash.com/photo-1511732351165-5e4b902af0c2?auto=format&fit=crop&w=800&q=80"
-          alt="Mission Travel"
-          className="rounded-2xl shadow-lg w-full h-50 object-cover max-sm:h-64 max-md:h-80"
-        />
-      </div>
-
-      {/* Vision Section */}
-      <div className="mt-20 grid grid-cols-2 gap-10 items-center max-md:grid-cols-1">
-        <img
-          src="https://images.unsplash.com/photo-1488646953014-85cb44e25828?auto=format&fit=crop&w=800&q=80"
-          alt="Vision"
-          className="rounded-2xl shadow-lg w-full h-50 object-cover max-sm:h-64 max-md:h-80"
-        />
-        <div>
-          <h2 className="text-2xl font-semibold mb-4 max-sm:text-xl">Our Vision</h2>
-          <p className="text-gray-700 text-base leading-relaxed max-sm:text-sm">
-            To be Africa's most trusted travel brand — inspiring people to explore more, live boldly, and forge unforgettable memories.
-            We envision a world where travel is not a luxury, but a universal right.
-          </p>
-        </div>
-      </div>
-
-        {/* Core Values */}
-      <div className="mt-20">
-        <h2 className="text-2xl font-bold text-center mb-10 max-sm:text-xl">Our Core Values</h2>
-        <div className="grid grid-cols-3 gap-8 text-center max-md:grid-cols-2 max-sm:grid-cols-1">
-          <div>
-            <h4 className="text-lg font-semibold mb-2">Integrity</h4>
-            <p className="text-sm text-gray-600">We uphold honesty and transparency in all we do.</p>
-          </div>
-          <div>
-            <h4 className="text-lg font-semibold mb-2">Innovation</h4>
-            <p className="text-sm text-gray-600">We embrace new ideas to craft better journeys.</p>
-          </div>
-          <div>
-            <h4 className="text-lg font-semibold mb-2">Customer-Centric</h4>
-            <p className="text-sm text-gray-600">Your experience drives our every decision.</p>
+          {/* Text Content */}
+          <div className="absolute inset-0 flex flex-col items-center justify-center text-center text-white px-4">
+            <h2 className="text-3xl sm:text-4xl font-bold mb-4">
+              Our Agricultural Solutions
+            </h2>
+            <p className="max-w-2xl text-lg text-gray-100">
+              Empowering farmers, buyers, and agribusinesses with technology-driven
+              tools for sustainable growth and fair trade.
+            </p>
           </div>
         </div>
+
+         <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-10 items-center">
+        {/* Left Image */}
+        <div className="relative">
+          <img
+            src="/assets/sections (1).png" 
+            alt="Hydroponics and urban farming system"
+            className="w-full h-full object-cover rounded-2xl shadow-2xl hover:scale-105 transition-transform duration-700"
+          />
+
+          {/* Caption Overlay (optional, but looks elegant) */}
+          <div className="absolute bottom-6 left-6 bg-lime-600 text-white px-5 py-3 rounded-lg shadow-md bg-opacity-90 backdrop-blur-sm">
+            <h3 className="text-lg font-semibold leading-snug">
+              Hydroponics & Urban Farming <br />
+              <span className="text-sm font-normal text-gray-200">
+                The Future of Food
+              </span>
+            </h3>
+          </div>
+        </div>
+
+        {/* Right Text Section */}
+         <div>
+              <h2 className="text-3xl md:text-4xl font-bold text-lime-600 leading-tight mb-6">
+                The best choice for your farming needs
+              </h2>
+              <p className="text-gray-700 text-base mb-6 leading-relaxed">
+                At AgroPulse, we are dedicated to revolutionizing agriculture through
+                innovative, sustainable, and community-focused solutions. Our mission is to
+                empower smallholder farmers and connect them with fair markets, modern
+                insights, and growth opportunities.
+              </p>
+
+              <ul className="space-y-4 mb-8">
+                {[
+                  "Bridging the gap between farmers and buyers with our trusted digital marketplace.",
+                  "Empowering farmers with the tools and knowledge they need to thrive.",
+                  "Harnessing data and technology for smarter farming decisions.",
+                  "Building a community of conscious consumers and ethical producers."
+                ].map((item, index) => (
+                  <li key={index} className="flex items-start gap-3">
+                    <span className="text-yellow-200 text-sm  mt-0.5">✓</span>
+                    <p className="text-gray-600 text-sm">{item}</p>
+                  </li>
+                ))}
+              </ul>
+
+              <button className="bg-lime-600 hover:bg-lime-700 text-white px-8 py-3 rounded-md font-semibold transition-all duration-300 shadow-md">
+                Discover More
+              </button>
+            </div>
+       
+      </div>
       </div>
 
-      {/* Call to Action */}
-      <div className="mt-24 text-center">
-        <h3 className="text-xl font-semibold mb-4 max-sm:text-lg">Ready to start your next journey?</h3>
-        <a
-          href="/destinations"
-          className="inline-block bg-lime-600 mt-10 hover:bg-lime-500 text-white px-6 py-3 rounded-full font-medium transition max-sm:px-4 max-sm:py-2"
-        >
-          Explore Destinations
-        </a>
-      </div>
+         {/* Vision & Mission */}
+          <div className="grid md:grid-cols-2 mt-8 gap-12 mb-16">
+            <div className="bg-lime-50 p-10 rounded-2xl shadow-lg text-center">
+              <h3 className="text-2xl font-bold text-lime-600 mb-4">Our Vision</h3>
+              <p className="text-gray-700 leading-relaxed">
+                To be the leading platform connecting farmers and buyers, driving sustainable agriculture, and creating a smarter, tech-enabled farming ecosystem.
+              </p>
+            </div>
+            <div className="bg-lime-50 p-10 rounded-2xl shadow-lg text-center">
+              <h3 className="text-2xl font-bold text-lime-600 mb-4">Our Mission</h3>
+              <p className="text-gray-700 leading-relaxed">
+                To empower farmers with modern tools and insights, provide buyers with verified produce, and foster growth, innovation, and sustainability in agriculture.
+              </p>
+            </div>
+          </div>
+
+         {/* Video Section */}
+      <section className="py-12 bg-white">
+        <div className="max-w-4xl mx-auto px-6 lg:px-8">
+          <h2 className="text-3xl font-bold text-center mb-8 text-gray-800">
+            See Our Farming Process
+          </h2>
+          <div className="rounded-2xl overflow-hidden shadow-2xl">
+            <iframe 
+              className="w-full aspect-video"
+              src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+              title="AgroPulse Farming Process"
+              allowFullScreen
+            />
+          </div>
+        </div>
+      </section>
+
+      {/*  What They Say */}
+      <section className="py-20 bg-lime-50">
+        <div className="max-w-6xl mx-auto px-6 lg:px-8">
+          <h2 className="text-3xl font-bold text-center mb-12 text-gray-800">
+            What They Say
+          </h2>
+          <div className="grid md:grid-cols-2 gap-8">
+            {farmers.map((farmer, index) => (
+              <div key={index} className="bg-white rounded-2xl p-6 shadow-lg">
+                <div className="flex items-center mb-4">
+                  <img 
+                    src={farmer.image} 
+                    alt={farmer.name}
+                    className="w-12 h-12 rounded-full object-cover mr-4"
+                  />
+                  <div>
+                    <h4 className="font-semibold text-gray-800">{farmer.name}</h4>
+                    <p className="text-lime-600 text-sm">{farmer.role}</p>
+                  </div>
+                </div>
+                <p className="text-gray-600 italic">"{farmer.quote}"</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+       {/* Steps Section */}
+      <section className="py-20 bg-white">
+        <div className="max-w-6xl mx-auto px-6 lg:px-8">
+          <h2 className="text-3xl font-bold text-center mb-12 text-gray-800">
+            How AgroPulse Works
+          </h2>
+          <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+            {steps.map((step, index) => (
+              <div
+                key={index}
+                className="flex flex-col items-center text-center bg-lime-50 p-8 rounded-2xl shadow-sm hover:shadow-lg hover:scale-[1.02] transition-all duration-300 border border-lime-100"
+              >
+                <div className="w-16 h-16 bg-lime-600 rounded-full flex items-center justify-center text-white font-bold text-xl mb-4">
+                  {index + 1}
+                </div>
+                <h3 className="text-lg font-semibold text-gray-900 mb-3">
+                  {step.title}
+                </h3>
+                <p className="text-sm text-gray-600 leading-relaxed">
+                  {step.description}
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
     </section>
-    {/* <Team /> */}
-  </>
+      {/* <Team /> */}
+    </>
   );
 }

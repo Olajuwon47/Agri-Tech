@@ -7,10 +7,11 @@ import { ShoppingBagIcon } from 'lucide-react'
 
 const navigation = [
   { name: 'Home', href: '/' },
-  { name: 'Services', href: '#' },
-  { name: 'Marketplace', href: '#' },
-  { name: 'Contact Us', href: '/contact' },
-  { name: 'Community', href: '#' },
+  { name: 'Services', href: '/Services' },
+  { name: 'Marketplace', href: '/Marketplace' },
+  { name: 'Contact Us', href: '/Contact' },
+  { name: 'About Us', href: '/About Us' },
+  { name: 'Community', href: '/Community' },
 ]
 
 export default function Navigation() {
@@ -63,7 +64,7 @@ export default function Navigation() {
               href="#"
               className="px-4 py-2 rounded-md bg-lime-200 hover:bg-yellow-200 font-semibold text-lime-900 hover:text-lime-800 transition-all duration-200 shadow-sm hover:shadow-md"
             >
-              Log in <span aria-hidden="true">&rarr;</span>
+              Join as Farmer <span aria-hidden="true">&rarr;</span>
             </a>
             <a
               href="#"
@@ -123,7 +124,7 @@ export default function Navigation() {
                     className="-mx-3 block px-3 py-2.5 text-base/7 rounded-md bg-lime-200 hover:bg-yellow-200 font-semibold text-lime-900 text-center transition-colors"
                     onClick={() => setMobileMenuOpen(false)}
                   >
-                    Log in
+                    Join as Farmer
                   </a>
                   
                   <a
