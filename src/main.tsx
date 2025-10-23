@@ -9,6 +9,8 @@ import Services from './pages/Service.tsx'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import AboutUs from './pages/About Us.tsx';
 import Community from './pages/Community.tsx';
+import LoginForm from "./components/Account/login-form.tsx"
+import SignupForm from "./components/Account/signup-form.tsx"
 
 
 const router = createBrowserRouter([
@@ -36,7 +38,13 @@ const router = createBrowserRouter([
       },
       {path: '/Community',
       element: <Community />,
-      }
+      },
+      {path:'/login-form',
+      element: <LoginForm />,
+    },
+       {path:'/signup-form',
+      element: <SignupForm />
+      ,}
     ],
   },
 ]);

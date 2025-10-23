@@ -1,6 +1,5 @@
 import { } from 'react';
 // import Team from '../Pages/Team.tsx';
-
 export default function AboutAgroPulse() {
    const steps = [
     {
