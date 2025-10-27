@@ -3,7 +3,7 @@
 import { useState } from 'react'
 import { Dialog, DialogPanel } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
-import { ShoppingBagIcon } from 'lucide-react'
+import { Menu, MenuButton, MenuItem, MenuItems } from '@headlessui/react'
 
 const navigation = [
   { name: 'Home', href: '/' },
@@ -29,6 +29,7 @@ export default function Navigation() {
                 alt="Company Logo"
                 src="/assets/AgroPulse.png"
                 className="h-8 w-auto transition-transform hover:scale-105"
+                loading='lazy'
               />
             </a>
           </div>
@@ -61,22 +62,54 @@ export default function Navigation() {
           {/* Desktop actions */}
           <div className="hidden lg:flex lg:flex-1 lg:justify-end lg:items-center lg:gap-x-6">
             <a
-              href="#"
+              href="/account"
               className="px-2 py-2 rounded-md bg-lime-200 hover:bg-yellow-200 font-semibold text-lime-900 hover:text-lime-800 transition-all duration-200 shadow-sm hover:shadow-md"
             >
-              Join as Farmer
+              Join Agro Farm
             </a>
-            <a
-              href="#"
-              className="group -m-2 flex items-center p-2 hover:bg-lime-800 rounded-lg transition-colors"
-            >
-              <ShoppingBagIcon
-                aria-hidden="true"
-                className="size-6 shrink-0 text-gray-200 group-hover:text-white transition-colors"
-              />
-              <span className="ml-2 text-sm font-medium text-white group-hover:text-lime-200">0</span>
-              <span className="sr-only">items in cart, view bag</span>
-            </a>
+        {/* Profile dropdown */}
+            <Menu as="div" className="relative ml-3">
+              <MenuButton className="relative flex rounded-full focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-lime-500">
+                <span className="absolute -inset-1.5" />
+                <span className="sr-only">Open user menu</span>
+                <img
+                  alt=""
+                  src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+                  className="size-8 rounded-full bg-gray-800 outline -outline-offset-1 outline-white/10"
+                  loading="lazy"
+                />
+              </MenuButton>
+
+              <MenuItems
+                transition
+                className="absolute right-0 z-10 mt-2 w-48 origin-top-right rounded-md bg-lime-300 py-1 outline -outline-offset-1 outline-white/10 transition data-closed:scale-95 data-closed:transform data-closed:opacity-0 data-enter:duration-100 data-enter:ease-out data-leave:duration-75 data-leave:ease-in"
+              >
+                <MenuItem>
+                  <a
+                    href="/Profile"
+                    className="block bg-amber-50 px-4 py-2 text-smtext-black data-focus:bg-white/5 data-focus:outline-hidden"
+                  >
+                    Your profile
+                  </a>
+                </MenuItem>
+                <MenuItem>
+                  <a
+                    href="#"
+                    className="block px-4 py-2 text-smtext-black data-focus:bg-white/5 data-focus:outline-hidden"
+                  >
+                    Settings
+                  </a>
+                </MenuItem>
+                <MenuItem>
+                  <a
+                    href="#"
+                    className="block px-4 py-2 text-smtext-black data-focus:bg-white/5 data-focus:outline-hidden"
+                  >
+                    Sign out
+                  </a>
+                </MenuItem>
+              </MenuItems>
+            </Menu>
           </div>
         </nav>
 
@@ -91,6 +124,7 @@ export default function Navigation() {
                   alt="Company Logo"
                   src="/assets/AgroPulse.png"
                   className="h-8 w-auto"
+                 loading='lazy' 
                 />
               </a>
               <button
@@ -120,25 +154,56 @@ export default function Navigation() {
                 
                 <div className="py-6 space-y-4">
                   <a
-                    href="#"
+                    href="/account"
                     className="-mx-3 block px-3 py-2.5 text-base/7 rounded-md bg-lime-200 hover:bg-yellow-200 font-semibold text-lime-900 text-center transition-colors"
                     onClick={() => setMobileMenuOpen(false)}
                   >
-                    Join as Farmer
+                        Join Agro Farm
                   </a>
                   
+                 {/* Profile dropdown */}
+            <Menu as="div" className="relative ml-3">
+              <MenuButton className="relative flex rounded-full focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500">
+                <span className="absolute -inset-1.5" />
+                <span className="sr-only">Open user menu</span>
+                <img
+                  alt=""
+                  src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+                  className="size-8 rounded-full bg-gray-800 outline -outline-offset-1 outline-white/10"
+                  loading="lazy"
+                />
+              </MenuButton>
+
+              <MenuItems
+                transition
+                className="absolute right-0 z-10 mt-2 w-48 origin-top-right rounded-md bg-gray-800 py-1 outline -outline-offset-1 outline-white/10 transition data-closed:scale-95 data-closed:transform data-closed:opacity-0 data-enter:duration-100 data-enter:ease-out data-leave:duration-75 data-leave:ease-in"
+              >
+                <MenuItem>
                   <a
                     href="#"
-                    className="group -mx-3 flex items-center justify-center px-3 py-2 rounded-lg hover:bg-white/5 transition-colors"
-                    onClick={() => setMobileMenuOpen(false)}
+                    className="block px-4 py-2 text-smtext-black data-focus:bg-white/5 data-focus:outline-hidden"
                   >
-                    <ShoppingBagIcon
-                      aria-hidden="true"
-                      className="size-6 shrink-0 text-gray-200 group-hover:text-white"
-                    />
-                    <span className="ml-2 text-sm font-medium text-white">0 items in cart</span>
-                    <span className="sr-only">items in cart, view bag</span>
+                    Your profile
                   </a>
+                </MenuItem>
+                <MenuItem>
+                  <a
+                    href="#"
+                    className="block px-4 py-2 text-smtext-black data-focus:bg-white/5 data-focus:outline-hidden"
+                  >
+                    Settings
+                  </a>
+                </MenuItem>
+                <MenuItem>
+                  <a
+                    href="#"
+                    className="block px-4 py-2 text-smtext-black data-focus:bg-white/5 data-focus:outline-hidden"
+                  >
+                    Sign out
+                  </a>
+                </MenuItem>
+              </MenuItems>
+            </Menu>
                 </div>
               </div>
             </div>

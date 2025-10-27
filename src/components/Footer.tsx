@@ -11,6 +11,7 @@ export default function Footer() {
                 alt=""
                 src="/assets/AgroPulse.png"
                 className="h-8 w-auto"
+                loading='lazy'
               />
           <p className="text-sm max-w-xs">
             Empowering communities through sustainable agriculture. 

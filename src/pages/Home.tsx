@@ -44,6 +44,7 @@ export default function HeroCarousel() {
                   src={src}
                   alt={`Slide ${index + 1}`}
                   className="w-full h-full object-cover"
+                    loading="lazy"
                 />
               </CarouselItem>
             ))}
@@ -64,11 +65,11 @@ export default function HeroCarousel() {
             </p>
             <div className="mt-8 flex justify-center">
               <a
-                href="/login-form"
+                href="/account"
                 className="rounded-md bg-yellow-400 hover:bg-yellow-300 px-6 py-3 text-base font-semibold text-gray-900 shadow-lg transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-yellow-400 max-md:px-5
                  max-md:py-2 max-md:text-sm max-sm:px-4 max-sm:py-2"
               >
-                Join as Farmer
+                  Join Agro Farm
               </a>
             </div>
           </div>

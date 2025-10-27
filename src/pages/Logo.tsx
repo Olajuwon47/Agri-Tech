@@ -65,6 +65,7 @@ export default function Example() {
                 width={150}
                 height={60}
                 className="max-h-14 w-auto object-contain drop-shadow-sm hover:drop-shadow-md transition-all"
+                  loading="lazy"
                 animate={{
                   y: [0, -4, 0],
                 }}

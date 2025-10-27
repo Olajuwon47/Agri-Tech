@@ -179,6 +179,7 @@ export default function Testimonial() {
                         src={t.image}
                         alt={`${t.name}'s Avatar`}
                         className="w-14 h-14 rounded-full object-cover border-2 border-green-200 max-sm:w-12 max-sm:h-12"
+                          loading="lazy"
                       />
                       <div className="flex-1">
                         <h3 className="font-semibold text-gray-900 text-sm max-sm:text-xs">

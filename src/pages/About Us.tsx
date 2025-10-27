@@ -44,6 +44,7 @@ export default function AboutAgroPulse() {
             src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-deoFxM4uZNUSsGcVeisFdqIe5PGBas5kLQ&s"
             alt="Service Banner"
             className="w-full h-52"
+              loading="lazy"
           />
     
 
@@ -69,6 +70,7 @@ export default function AboutAgroPulse() {
             src="/assets/sections (1).png" 
             alt="Hydroponics and urban farming system"
             className="w-full h-full object-cover rounded-2xl shadow-2xl hover:scale-105 transition-transform duration-700"
+              loading="lazy"
           />
 
           {/* Caption Overlay (optional, but looks elegant) */}
@@ -141,7 +143,8 @@ export default function AboutAgroPulse() {
           <div className="rounded-2xl overflow-hidden shadow-2xl">
             <iframe 
               className="w-full aspect-video"
-              src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+              loading='lazy'
+              src="https://youtu.be/x2lK-fvOyXI?si=oPs8qaQOb0egT2pZ"
               title="AgroPulse Farming Process"
               allowFullScreen
             />
@@ -163,6 +166,7 @@ export default function AboutAgroPulse() {
                     src={farmer.image} 
                     alt={farmer.name}
                     className="w-12 h-12 rounded-full object-cover mr-4"
+                      loading="lazy"
                   />
                   <div>
                     <h4 className="font-semibold text-gray-800">{farmer.name}</h4>

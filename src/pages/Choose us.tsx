@@ -20,6 +20,7 @@ export default function WhyChooseUs() {
             src="/assets/sections (1).png" 
             alt="Hydroponics and urban farming system"
             className="w-full h-full object-cover rounded-2xl shadow-2xl hover:scale-105 transition-transform duration-700"
+              loading="lazy"
           />
 
           {/* Caption Overlay (optional, but looks elegant) */}

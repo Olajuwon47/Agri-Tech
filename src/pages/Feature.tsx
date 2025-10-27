@@ -16,6 +16,7 @@ export default function Feature() {
               src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6"
               alt="Modern sustainable farming in action"
               className="w-full h-64 object-cover rounded-2xl shadow-lg hover:scale-105 transition-transform duration-300"
+                loading="lazy"
             />
           </div>
           {/* Right Text */}
@@ -48,6 +49,7 @@ export default function Feature() {
               src="https://images.unsplash.com/photo-1597848212624-a19eb35e2651"
               alt="Fresh produce from local farmers"
               className="w-full h-64 object-cover rounded-2xl shadow-lg hover:scale-105 transition-transform duration-300"
+                loading="lazy"
             />
           </div>
           {/* Left Text */}
@@ -80,6 +82,7 @@ export default function Feature() {
               src="https://tse2.mm.bing.net/th/id/OIP.gfqNJe6wxyMg8ga50fWZhAHaEK?cb=12&w=474&h=474&c=7&p=0"
               alt="Hydroponic indoor farming system"
               className="w-full h-64 object-cover rounded-2xl shadow-lg hover:scale-105 transition-transform duration-300"
+                loading="lazy"
             />
           </div>
           {/* Right Text */}
@@ -111,6 +114,7 @@ export default function Feature() {
               src="https://images.unsplash.com/photo-1528825871115-3581a5387919"
               alt="Agribusiness exports and market growth"
               className="w-full h-64 object-cover rounded-2xl shadow-lg hover:scale-105 transition-transform duration-300"
+                loading="lazy"
             />
           </div>
           {/* Left Text */}
@@ -142,6 +146,7 @@ export default function Feature() {
               src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7"
               alt="Young farmers collaborating in a field"
               className="w-full h-64 object-cover rounded-2xl shadow-lg hover:scale-105 transition-transform duration-300"
+                loading="lazy"
             />
           </div>
           {/* Right Text */}
