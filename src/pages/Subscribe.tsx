@@ -26,12 +26,6 @@ export default function Subscribe() {
 
   return (
     <section className="relative py-16 px-3 mt-3.5  Ssm:px-8 lg:px-12  overflow-hidden">
-      {/* Background texture (optional)
-      <div
-        className="absolute inset-0 bg-[url('/assets/leaves-pattern.png')] bg-cover bg-center opacity-10"
-        aria-hidden="true"
-      /> */}
-
       {/* Notification (Toast) */}
       {notification && (
         <div className="fixed top-5 left-1/2 -translate-x-1/2 z-50 bg-green-600 text-white px-6 py-3 rounded-full shadow-lg animate-fadeIn">

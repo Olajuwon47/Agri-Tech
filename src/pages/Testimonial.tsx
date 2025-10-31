@@ -112,7 +112,7 @@ function TestimonialItem({ t, index }: { t: TestimonialType; index: number }) {
         initial={{ opacity: 0, y: 50 }}
         animate={inView ? { opacity: 1, y: 0 } : {}}
         transition={{ duration: 0.6, delay: index * 0.1 }}
-        className="bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 p-6 max-sm:p-4 border border-green-100 hover:border-green-200 group"
+         className="bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 p-6 max-sm:p-4 border border-green-100 hover:border-green-200 group"
       >
         <div className="text-green-500 text-2xl mb-4 opacity-80 group-hover:opacity-100 transition-opacity">
           "
