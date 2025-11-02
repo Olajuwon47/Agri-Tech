@@ -1,7 +1,7 @@
 import { ArrowRight } from "lucide-react";
 import Subscribe from "../pages/Subscribe.tsx"
 
-export default function Services() {
+export default function Service() {
   return (
     <section className="bg-gray-50 py-20">
       <div className="max-w-6xl mx-auto px-6 lg:px-8">

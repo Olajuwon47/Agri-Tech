@@ -7,7 +7,7 @@ import { Menu, MenuButton, MenuItem, MenuItems } from '@headlessui/react'
 
 const navigation = [
   { name: 'Home', href: '/' },
-  { name: 'Services', href: '/Service' },
+  { name: 'Service', href: '/Service' },
   { name: 'Marketplace', href: '/marketplace' },
   { name: 'Contact Us', href: '/Contact' },
   { name: 'About Us', href: '/AboutUs' },

@@ -8,7 +8,7 @@ import { cn } from "./lib/utils.ts"
 
 // Lazy imports
 const Home = lazy(() => import('./pages/Home'));
-const Services = lazy(() => import('./pages/Service.tsx'));
+const Service = lazy(() => import('./pages/Service.tsx'));
 const Marketplace = lazy(() => import('./pages/marketplace.tsx'));
 const AboutUs = lazy(() => import('./pages/AboutUs.tsx'));
 const Contact = lazy(() => import('./pages/Contact'));
@@ -49,8 +49,8 @@ const router = createBrowserRouter([
         path: '/',
         element: <Home />,
       },
-      { path: '/Services',
-        element: <Services />,
+      { path: '/Service',
+        element: <Service />,
       },
       {
         path: '/marketplace',

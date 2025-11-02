@@ -1,6 +1,6 @@
 import { } from 'react';
 // import Team from '../Pages/Team.tsx';
-export default function AboutAgroPulse() {
+export default function AboutUs() {
    const steps = [
     {
       title: "1. Join as a Farmer or Buyer",
