@@ -4,6 +4,7 @@ import { useState } from 'react'
 import { Dialog, DialogPanel } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import { Menu, MenuButton, MenuItem, MenuItems } from '@headlessui/react'
+import { Link } from 'react-router-dom'
 
 const navigation = [
   { name: 'Home', href: '/' },
@@ -23,7 +24,7 @@ export default function Navigation() {
         <nav aria-label="Global" className="flex items-center justify-between p-4 lg:px-8">
           {/* Logo */}
           <div className="flex lg:flex-1">
-            <a href="/" className="-m-1.5 p-1.5">
+            <Link to="/" className="-m-1.5 p-1.5">
               <span className="sr-only">Your Company</span>
               <img
                 alt="Company Logo"
@@ -31,7 +32,7 @@ export default function Navigation() {
                 className="h-8 w-auto transition-transform hover:scale-105"
                 loading='lazy'
               />
-            </a>
+            </Link>
           </div>
 
           {/* Mobile menu button */}
@@ -49,24 +50,24 @@ export default function Navigation() {
           {/* Desktop navigation */}
           <div className="hidden lg:flex lg:gap-x-8">
             {navigation.map((item) => (
-              <a
+              <Link
                 key={item.name}
-                href={item.href}
+                to={item.href}
                 className="text-sm/6 font-semibold text-white hover:text-lime-200 transition-colors duration-200 py-2"
               >
                 {item.name}
-              </a>
+              </Link>
             ))}
           </div>
 
           {/* Desktop actions */}
           <div className="hidden lg:flex lg:flex-1 lg:justify-end lg:items-center lg:gap-x-6">
-            <a
-              href="/account"
+            <Link
+              to="/account"
               className="px-2 py-2 rounded-md bg-lime-200 hover:bg-yellow-200 font-semibold text-lime-900 hover:text-lime-800 transition-all duration-200 shadow-sm hover:shadow-md"
             >
               Join Agro Farm
-            </a>
+            </Link>
         {/* Profile dropdown */}
             <Menu as="div" className="relative ml-3">
               <MenuButton className="relative flex rounded-full focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-lime-500">
@@ -85,28 +86,28 @@ export default function Navigation() {
                 className="absolute right-0 z-10 mt-2 w-48 origin-top-right rounded-md bg-lime-300 py-1 outline -outline-offset-1 outline-white/10 transition data-closed:scale-95 data-closed:transform data-closed:opacity-0 data-enter:duration-100 data-enter:ease-out data-leave:duration-75 data-leave:ease-in"
               >
                 <MenuItem>
-                  <a
-                    href="/Profile"
+                  <Link
+                    to="/Profile"
                     className="block bg-amber-50 px-4 py-2 text-smtext-black data-focus:bg-white/5 data-focus:outline-hidden"
                   >
                     Your profile
-                  </a>
+                  </Link>
                 </MenuItem>
                 <MenuItem>
-                  <a
-                    href="#"
+                  <Link
+                    to="#"
                     className="block px-4 py-2 text-smtext-black data-focus:bg-white/5 data-focus:outline-hidden"
                   >
                     Settings
-                  </a>
+                  </Link>
                 </MenuItem>
                 <MenuItem>
-                  <a
-                    href="#"
+                  <Link
+                    to="/"
                     className="block px-4 py-2 text-smtext-black data-focus:bg-white/5 data-focus:outline-hidden"
                   >
                     Sign out
-                  </a>
+                  </Link>
                 </MenuItem>
               </MenuItems>
             </Menu>
@@ -118,7 +119,7 @@ export default function Navigation() {
           <div className="fixed inset-0 z-50 bg-gradient-to-r from-yellow-300 to-lime-900" />
           <DialogPanel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-gradient-to-r from-yellow-300 to-lime-900 px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-100/10">
             <div className="flex items-center justify-between">
-              <a href="/" className="-m-1.5 p-1.5">
+              <Link to="/" className="-m-1.5 p-1.5">
                 <span className="sr-only">Your Company</span>
                 <img
                   alt="Company Logo"
@@ -126,7 +127,7 @@ export default function Navigation() {
                   className="h-8 w-auto"
                  loading='lazy' 
                 />
-              </a>
+              </Link>
               <button
                 type="button"
                 onClick={() => setMobileMenuOpen(false)}
@@ -141,25 +142,25 @@ export default function Navigation() {
               <div className="-my-6 divide-y divide-white/10">
                 <div className="space-y-2 py-6">
                   {navigation.map((item) => (
-                    <a
+                    <Link
                       key={item.name}
-                      href={item.href}
+                      to={item.href}
                       className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white hover:bg-white/5 transition-colors"
                       onClick={() => setMobileMenuOpen(false)}
                     >
                       {item.name}
-                    </a>
+                    </Link>
                   ))}
                 </div>
                 
                 <div className="py-6 space-y-4">
-                  <a
-                    href="/account"
+                  <Link
+                    to="/account"
                     className="-mx-3 block px-3 py-2.5 text-base/7 rounded-md bg-lime-200 hover:bg-yellow-200 font-semibold text-lime-900 text-center transition-colors"
                     onClick={() => setMobileMenuOpen(false)}
                   >
                         Join Agro Farm
-                  </a>
+                  </Link>
                   
                  {/* Profile dropdown */}
             <Menu as="div" className="relative ml-3">
@@ -179,28 +180,28 @@ export default function Navigation() {
                 className="absolute right-0 z-10 mt-2 w-48 origin-top-right rounded-md bg-gray-800 py-1 outline -outline-offset-1 outline-white/10 transition data-closed:scale-95 data-closed:transform data-closed:opacity-0 data-enter:duration-100 data-enter:ease-out data-leave:duration-75 data-leave:ease-in"
               >
                 <MenuItem>
-                  <a
-                    href="#"
+                  <Link
+                    to="#"
                     className="block px-4 py-2 text-smtext-black data-focus:bg-white/5 data-focus:outline-hidden"
                   >
                     Your profile
-                  </a>
+                  </Link>
                 </MenuItem>
                 <MenuItem>
-                  <a
-                    href="#"
+                  <Link
+                    to="#"
                     className="block px-4 py-2 text-smtext-black data-focus:bg-white/5 data-focus:outline-hidden"
                   >
                     Settings
-                  </a>
+                  </Link>
                 </MenuItem>
                 <MenuItem>
-                  <a
-                    href="#"
+                  <Link
+                    to="#"
                     className="block px-4 py-2 text-smtext-black data-focus:bg-white/5 data-focus:outline-hidden"
                   >
                     Sign out
-                  </a>
+                  </Link>
                 </MenuItem>
               </MenuItems>
             </Menu>
