@@ -1,5 +1,6 @@
 "use client";
 import { } from 'react'
+import { Link } from 'react-router-dom'
 
 export default function WhyChooseUs() {
   return (
@@ -89,12 +90,12 @@ export default function WhyChooseUs() {
             </li>
           </ul>
 
-          <a
-            href="#"
+          <Link
+            to="#"
             className="inline-block mt-10 bg-lime-600 hover:bg-lime-700 text-white px-8 py-3 rounded-md font-semibold transition-all duration-300 shadow-md"
           >
             Discover More
-          </a>
+          </Link>
         </div>
       </div>
     </section>

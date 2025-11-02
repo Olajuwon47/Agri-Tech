@@ -1,5 +1,6 @@
 "use client";
 import { } from 'react'
+import { Link } from 'react-router-dom'
 export default function Feature() {
   return (
     <section className="max-w-6xl mx-auto font-sans mt-12 px-4">
@@ -63,12 +64,12 @@ export default function Feature() {
               community-supported agriculture. The green economy is thriving —
               from field to market.
             </p>
-            <a
-              href="#"
+            <Link
+              to="#"
               className="inline-block rounded-md bg-yellow-200 px-5 py-3 text-sm font-semibold text-white hover:bg-lime-200 transition-colors duration-200 shadow-md"
             >
               Discover More
-            </a>
+            </Link>
           </div>
         </div>
       </article>
@@ -95,12 +96,12 @@ export default function Feature() {
               food insecurity challenges. These soil-free systems grow fresh
               produce year-round, using 90% less water than traditional farming.
             </p>
-            <a
-              href="#"
+            <Link
+              to="#"
               className="inline-block rounded-md bg-lime-200 px-5 py-3 text-sm font-semibold text-white hover:bg-yellow-300 transition-colors duration-200 shadow-md"
             >
               Learn More
-            </a>
+            </Link>
           </div>
         </div>
       </article>
@@ -127,12 +128,12 @@ export default function Feature() {
               tapping into global markets. Sustainable agribusiness is proving
               profitable — and environmentally responsible.
             </p>
-            <a
-              href="#"
+            <Link
+              to="#"
               className="inline-block rounded-md bg-yellow-200 px-5 py-3 text-sm font-semibold text-white hover:bg-lime-200 transition-colors duration-200 shadow-md"
             >
               Explore Insights
-            </a>
+            </Link>
           </div>
         </div>
       </article>
@@ -159,12 +160,12 @@ export default function Feature() {
               through agritech startups, community training, and climate-smart
               solutions. The future of farming is youthful and tech-driven.
             </p>
-            <a
-              href="#"
+            <Link
+              to="#"
               className="inline-block rounded-md bg-lime-200 px-5 py-3 text-sm font-semibold text-white hover:bg-yellow-200 transition-colors duration-200 shadow-md"
             >
               Read Story
-            </a>
+            </Link>
           </div>
         </div>
       </article>

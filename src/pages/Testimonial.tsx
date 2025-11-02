@@ -10,6 +10,7 @@ import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
 import type { EmblaCarouselType } from "embla-carousel"; // ✅ Correct type import
 import "../index.css";
+import { Link } from 'react-router-dom'
 
 interface TestimonialType {
   name: string;
@@ -242,12 +243,12 @@ export default function Testimonial() {
         <p className="text-gray-600 mb-6 max-sm:text-sm">
           Ready to transform your farming operations?
         </p>
-        <a
-          href="/Community"
+        <Link
+          to="/Community"
           className="bg-green-600 hover:bg-green-700 text-white font-semibold py-3 px-4 rounded-full transition-all duration-300 transform hover:scale-105 shadow-md hover:shadow-md max-sm:py-2 max-sm:px-6 max-sm:text-sm"
         >
           Join Our Farming Community
-        </a>
+        </Link>
       </motion.div>
     </div>
   );

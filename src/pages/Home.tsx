@@ -13,6 +13,7 @@ import {
   CarouselContent,
   CarouselItem,
 } from "../components/ui/carousel";
+import { Link } from "react-router";
 
 export default function HeroCarousel() {
   const plugin = React.useRef(
@@ -64,13 +65,13 @@ export default function HeroCarousel() {
               We connect Africa’s farmers to profitable markets, ensure transparency in pricing, and promote sustainable farming practices through technology.
             </p>
             <div className="mt-8 flex justify-center">
-              <a
-                href="/account"
+              <Link
+                to="/account"
                 className="rounded-md bg-yellow-400 hover:bg-yellow-300 px-6 py-3 text-base font-semibold text-gray-900 shadow-lg transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-yellow-400 max-md:px-5
                  max-md:py-2 max-md:text-sm max-sm:px-4 max-sm:py-2"
               >
                   Join Agro Farm
-              </a>
+              </Link>
             </div>
           </div>
         </div>

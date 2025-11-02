@@ -1,4 +1,5 @@
 import { CheckCircle } from "lucide-react";
+import { Link } from 'react-router-dom'
 
 export function Hero() {
   const steps = [
@@ -74,12 +75,12 @@ export function Hero() {
             AgroPulse to access fair markets, data-driven insights, and
             sustainable growth opportunities.
           </p>
-          <a
-            href="/Community"
+          <Link
+            to="/Community"
             className="bg-lime-200 hover:bg-yellow-100 text-white font-semibold px-6 py-3 rounded-xl transition-all shadow-md inline-block"
           >
             Join Our Community
-          </a>
+          </Link>
         </div>
       </div>
     </section>
