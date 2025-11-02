@@ -53,15 +53,15 @@ const router = createBrowserRouter([
         element: <Services />,
       },
       {
-        path: '/Marketplace',
+        path: '/marketplace',
         element: <Marketplace />,
       },
       {
-        path: '/About Us',
+        path: '/AboutUs',
         element: <AboutUs />,
       },
       {
-        path: '/contact',
+        path: '/Contact',
         element: <Contact />,
       },
       {path: '/Community',
