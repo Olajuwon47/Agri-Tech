@@ -141,7 +141,7 @@ export default function Marketplace() {
       {/* Products Grid */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-md:gap-6 max-sm:gap-4">
         {paginatedProducts.map((product: Product) => (
-          <div key={product.id} className="bg-white shadow-sm rounded-sm overflow-hidden hover:shadow-xl transition-shadow duration-300 max-sm:shadow-sm">
+          <div key={product.id} className="bg-white shadow-sm rounded-sm  hover:shadow-xl transition-shadow duration-300 max-sm:shadow-sm">
             <div className="relative">
               <img 
                 src={product.image} 

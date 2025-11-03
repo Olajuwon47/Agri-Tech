@@ -297,7 +297,7 @@ const KYCProfile: React.FC = () => {
 
               {/* Face Verification */}
               <div className="text-center mt-2 flex justify-center sm:col-span-2">
-                <div className="relative w-32 h-32 max-sm:w-24 max-sm:h-24 rounded-full border-2 border-lime-300 flex items-center justify-center overflow-hidden">
+                <div className="relative w-32 h-32 max-sm:w-24 max-sm:h-24 rounded-full border-2 border-lime-300 flex items-center justify-center">
                   <label htmlFor="photo" className="block text-sm font-medium text-gray-900 cursor-pointer">
                     <PhotoIcon className="mx-auto size-12 text-lime-300" />
                     <span className="text-sm text-gray-500">Upload Face ID</span>

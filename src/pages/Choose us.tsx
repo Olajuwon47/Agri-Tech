@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 
 export default function WhyChooseUs() {
   return (
-    <section className="relative mt-8 bg-gray-800 py-16 md:py-20 px-6 md:px-10 font-sans overflow-hidden">
+    <section className="relative mt-8 bg-gray-800 py-16 md:py-20 px-6 md:px-10 font-sans">
       {/* Section Header */}
       <h2 className="text-3xl md:text-4xl font-serif text-center font-bold text-lime-600 leading-tight mb-4">
         Why Choose Agrios Market

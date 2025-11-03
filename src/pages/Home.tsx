@@ -32,7 +32,7 @@ export default function HeroCarousel() {
   return (
     <>
       {/* HERO SECTION */}
-      <section className="relative w-full h-[90vh] overflow-hidden max-md:h-[70vh] max-sm:h-[40vh]">
+      <section className="relative w-full h-[90vh] max-md:h-[70vh] max-sm:h-[40vh]">
         {/* Carousel Background */}
         <Carousel
           plugins={[plugin.current]}
@@ -58,10 +58,10 @@ export default function HeroCarousel() {
         {/* Text Content */}
         <div className="relative z-10 flex flex-col items-center justify-center h-full text-center text-white px-6 max-md:px-4 max-sm:px-2">
           <div className="max-w-3xl">
-            <h2 className="text-4xl font-bold text-lime-100 tracking-tight max-md:text-3xl max-sm:text-sm">
+            <h2 className="text-4xl font-bold text-gray-200 tracking-tight max-md:text-3xl max-sm:text-sm">
               Empowering smallholder farmers with access to buyers, fair pricing, and modern agricultural insights.
             </h2>
-            <p className="mt-6 text-lg text-gray-200 leading-relaxed max-md:text-base max-sm:text-sm">
+            <p className="mt-6 text-lg  leading-relaxed max-md:text-base max-sm:text-sm">
               We connect Africa’s farmers to profitable markets, ensure transparency in pricing, and promote sustainable farming practices through technology.
             </p>
             <div className="mt-8 flex justify-center">

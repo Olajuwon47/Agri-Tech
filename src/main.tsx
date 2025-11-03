@@ -8,7 +8,7 @@ import { cn } from "./lib/utils.ts"
 
 // Lazy imports
 const Home = lazy(() => import('./pages/Home'));
-const Service = lazy(() => import('./pages/Service.tsx'));
+/*const Service = lazy(() => import('./pages/Service.tsx'));
 const Marketplace = lazy(() => import('./pages/marketplace.tsx'));
 const AboutUs = lazy(() => import('./pages/AboutUs.tsx'));
 const Contact = lazy(() => import('./pages/Contact'));
@@ -16,7 +16,7 @@ const Community = lazy(() => import('./pages/Community.tsx'));
 const LoginForm = lazy(() => import('./pages/Account/login-form.tsx'));
 const SignupForm = lazy(() => import('./pages/Account/signup-form.tsx'));
 const Account = lazy(() => import('./pages/Account/account.tsx'));
-const ProfileSetup = lazy(() => import('./pages/Account/Profile.tsx'));
+const ProfileSetup = lazy(() => import('./pages/Account/Profile.tsx'));*/
 
 
 // Spinner component
@@ -49,7 +49,7 @@ const router = createBrowserRouter([
         path: '/',
         element: <Home />,
       },
-      { path: '/Service',
+      {/*{ path: '/Service',
         element: <Service />,
       },
       {
@@ -66,11 +66,12 @@ const router = createBrowserRouter([
       },
       {path: '/Community',
       element: <Community />,
-      },
+      },*/}
  
     ],
-    
   },
+    
+   {/* },
        {path:'/login-form',
       element: <LoginForm />,
     },
@@ -82,7 +83,7 @@ const router = createBrowserRouter([
       },
       {path:'/Profile',
       element: <ProfileSetup />,
-      },
+      },*/}
 ]);
 
 createRoot(document.getElementById('root')!).render(

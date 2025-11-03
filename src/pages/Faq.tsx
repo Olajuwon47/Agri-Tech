@@ -49,7 +49,7 @@ export default function Faq() {
         {faqs.map((item, index) => (
           <motion.div
             key={index}
-            className="rounded-lg border border-lime-200 bg-white shadow hover:shadow-lg transition-all duration-300 overflow-hidden"
+            className="rounded-md border border-lime-200 bg-white shadow hover:shadow-lg transition-all duration-300"
           >
             <button
               onClick={() => toggle(index)}

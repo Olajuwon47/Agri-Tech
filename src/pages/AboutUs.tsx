@@ -140,7 +140,7 @@ export default function AboutUs() {
           <h2 className="text-3xl font-bold text-center mb-8 text-gray-800">
             See Our Farming Process
           </h2>
-          <div className="rounded-2xl overflow-hidden shadow-2xl">
+          <div className="rounded-2xl shadow-2xl">
             <iframe 
               className="w-full aspect-video"
               loading='lazy'

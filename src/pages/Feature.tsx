@@ -12,7 +12,7 @@ export default function Feature() {
       <article className="border-t border-b border-gray-200 py-8 mb-8 hover:bg-lime-100 transition-all duration-300 rounded-xl">
         <div className="flex flex-col md:flex-row items-center">
           {/* Left Image */}
-          <div className="md:pr-6 mb-6 md:mb-0 w-full md:w-2/5">
+          <div className="md:pl-3 mb-6 md:mb-0 w-full md:w-2/5">
             <img
               src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6"
               alt="Modern sustainable farming in action"
@@ -21,14 +21,14 @@ export default function Feature() {
             />
           </div>
           {/* Right Text */}
-          <div className="w-full md:w-3/5 md:pl-3">
+          <div className="w-full md:w-3/5 md:pl-2.5">
             <h1 className="text-2xl md:text-3xl font-semibold text-green-900 leading-snug mb-3">
               Smart Farming Revolution: How Technology Is Transforming Crops
             </h1>
             <p className="text-gray-700 text-base leading-relaxed mb-5">
               Across the world, farmers are adopting IoT, drones, and data-driven
               insights to increase yield, conserve water, and build sustainable
-              farming practices. Agriculture is becoming smarter — and greener —
+              farming practices. Agriculture is becoming smarter and greener
               every single season.
             </p>
             <a
@@ -45,7 +45,7 @@ export default function Feature() {
       <article className="border-b border-gray-200 py-8 mb-8 hover:bg-lime-100 transition-all duration-300 rounded-xl">
         <div className="flex flex-col md:flex-row-reverse items-center">
           {/* Right Image */}
-          <div className="md:pl-6 mb-6 md:mb-0 w-full md:w-2/5">
+          <div className="md:pr-3 mb-6 md:mb-0 w-full md:w-2/5">
             <img
               src="https://images.unsplash.com/photo-1597848212624-a19eb35e2651"
               alt="Fresh produce from local farmers"
@@ -54,15 +54,14 @@ export default function Feature() {
             />
           </div>
           {/* Left Text */}
-          <div className="w-full md:w-3/5 md:pr-3">
+          <div className="w-full md:w-3/5 md:pl-3">
             <h1 className="text-2xl md:text-3xl font-semibold text-green-900 leading-snug mb-3">
               Local Farmers See Record Harvest After Rainfall Season
             </h1>
             <p className="text-gray-700 text-base leading-relaxed mb-5">
               After a year of unpredictable weather, local farmers are celebrating
-              record harvests thanks to improved soil management and
-              community-supported agriculture. The green economy is thriving —
-              from field to market.
+              record harvests thanks to improved soil management and community-supported agriculture.
+              The green economy is thriving from field to market.from field to market.
             </p>
             <Link
               to="#"
@@ -78,7 +77,7 @@ export default function Feature() {
       <article className="border-b border-gray-200 py-8 mb-8 hover:bg-lime-100 transition-all duration-300 rounded-xl">
         <div className="flex flex-col md:flex-row items-center">
           {/* Left Image */}
-          <div className="md:pr-6 mb-6 md:mb-0 w-full md:w-2/5">
+          <div className="md:pl-6 mb-6 md:mb-0 w-full md:w-2/5">
             <img
               src="https://tse2.mm.bing.net/th/id/OIP.gfqNJe6wxyMg8ga50fWZhAHaEK?cb=12&w=474&h=474&c=7&p=0"
               alt="Hydroponic indoor farming system"
@@ -110,7 +109,7 @@ export default function Feature() {
       <article className="border-b border-gray-200 py-8 mb-8 hover:bg-lime-100 transition-all duration-300 rounded-xl">
         <div className="flex flex-col md:flex-row-reverse items-center">
           {/* Right Image */}
-          <div className="md:pl-6 mb-6 md:mb-0 w-full md:w-2/5">
+          <div className="md:pr-6 mb-6 md:mb-0 w-full md:w-2/5">
             <img
               src="https://images.unsplash.com/photo-1528825871115-3581a5387919"
               alt="Agribusiness exports and market growth"
@@ -119,7 +118,7 @@ export default function Feature() {
             />
           </div>
           {/* Left Text */}
-          <div className="w-full md:w-3/5 md:pr-3">
+          <div className="w-full md:w-3/5 md:pl-3">
             <h1 className="text-2xl md:text-3xl font-semibold text-green-900 leading-snug mb-3">
               Agribusiness Exports Surge Amid Sustainable Market Reforms
             </h1>
@@ -142,7 +141,7 @@ export default function Feature() {
       <article className="border-b border-gray-200 py-8 hover:bg-lime-100 transition-all duration-300 rounded-xl">
         <div className="flex flex-col md:flex-row items-center">
           {/* Left Image */}
-          <div className="md:pr-6 mb-6 md:mb-0 w-full md:w-2/5">
+          <div className="md:pl-6 mb-6 md:mb-0 w-full md:w-2/5">
             <img
               src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7"
               alt="Young farmers collaborating in a field"
