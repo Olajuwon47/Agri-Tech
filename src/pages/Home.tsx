@@ -1,3 +1,4 @@
+// Improved AgroPulse Homepage (HeroCarousel)
 "use client";
 import * as React from "react";
 import Autoplay from "embla-carousel-autoplay";
@@ -17,10 +18,7 @@ import { Link } from "react-router";
 
 export default function HeroCarousel() {
   const plugin = React.useRef(
-    Autoplay({
-      delay: 4000,
-      stopOnInteraction: false,
-    })
+    Autoplay({ delay: 4500, stopOnInteraction: false })
   );
 
   const slides = [
@@ -32,45 +30,44 @@ export default function HeroCarousel() {
   return (
     <>
       {/* HERO SECTION */}
-      <section className="relative w-full h-[90vh] max-md:h-[70vh] max-sm:h-[40vh]">
-        {/* Carousel Background */}
-        <Carousel
-          plugins={[plugin.current]}
-          className="absolute inset-0 w-full h-full"
-        >
+      <section className="relative w-full h-[90vh] max-md:h-[75vh] max-sm:h-[55vh] overflow-hidden">
+        {/* Carousel */}
+        <Carousel plugins={[plugin.current]} className="absolute inset-0 w-full h-full">
           <CarouselContent>
             {slides.map((src, index) => (
               <CarouselItem key={index} className="w-full h-full">
                 <img
                   src={src}
                   alt={`Slide ${index + 1}`}
-                  className="w-full h-full object-cover"
-                    loading="lazy"
+                  className="w-full h-full object-cover scale-105 animate-[slowZoom_10s_ease-in-out_infinite]"
+                  loading="lazy"
                 />
               </CarouselItem>
             ))}
           </CarouselContent>
         </Carousel>
 
-        {/* Overlay for readability 
-        <div className="absolute inset-0 bg-black/50"></div>*/}
+        {/* Gradient Overlay */}
+        <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/30 to-black/70" />
 
-        {/* Text Content */}
-        <div className="relative z-10 flex flex-col items-center justify-center h-full text-center text-white px-6 max-md:px-4 max-sm:px-2">
-          <div className="max-w-3xl">
-            <h2 className="text-4xl font-bold text-gray-200 tracking-tight max-md:text-3xl max-sm:text-sm">
-              Empowering smallholder farmers with access to buyers, fair pricing, and modern agricultural insights.
-            </h2>
-            <p className="mt-6 text-lg  leading-relaxed max-md:text-base max-sm:text-sm">
-              We connect Africa’s farmers to profitable markets, ensure transparency in pricing, and promote sustainable farming practices through technology.
+        {/* CONTENT */}
+        <div className="relative z-10 flex items-center justify-center h-full px-6">
+          <div className="text-center max-w-3xl text-white">
+            <h1 className="text-5xl font-extrabold tracking-tight leading-tight max-md:text-4xl max-sm:text-2xl">
+              Connecting Farmers to Markets, Opportunities, and Growth
+            </h1>
+
+            <p className="mt-5 text-lg text-gray-200 leading-relaxed max-md:text-base max-sm:text-sm">
+              AgroPulse bridges the gap between smallholder farmers and ready buyers, fostering transparency,
+              fair pricing, and sustainable farming through modern technology.
             </p>
+
             <div className="mt-8 flex justify-center">
               <Link
                 to="/account"
-                className="rounded-md bg-yellow-400 hover:bg-yellow-300 px-6 py-3 text-base font-semibold text-gray-900 shadow-lg transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-yellow-400 max-md:px-5
-                 max-md:py-2 max-md:text-sm max-sm:px-4 max-sm:py-2"
+                className="px-8 py-3 rounded-lg bg-yellow-400 hover:bg-yellow-300 text-gray-900 text-lg font-semibold shadow-xl transition-all max-sm:text-sm max-sm:px-5 max-sm:py-2"
               >
-                  Join Agro Farm
+                Join AgroPulse
               </Link>
             </div>
           </div>

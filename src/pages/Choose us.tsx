@@ -1,35 +1,57 @@
 "use client";
-import { } from 'react'
-import { Link } from 'react-router-dom'
+import { Link } from 'react-router-dom';
+import { motion } from 'framer-motion';
 
 export default function WhyChooseUs() {
+  const listVariants = {
+    hidden: { opacity: 0, x: -20 },
+    visible: (i: number) => ({ opacity: 1, x: 0, transition: { delay: i * 0.2 } })
+  };
+
+  const benefits = [
+    {
+      title: 'Premium Organic Produce',
+      desc: 'Naturally grown, nutrient-rich, and full of authentic farm flavor.',
+      color: 'bg-lime-500 text-white'
+    },
+    {
+      title: 'Expert Farmers',
+      desc: 'Skilled professionals committed to excellence in every harvest.',
+      color: 'bg-yellow-400 text-black'
+    },
+    {
+      title: 'Sustainable & Ethical',
+      desc: 'Practices that protect the environment and ensure a resilient future.',
+      color: 'bg-green-500 text-white'
+    }
+  ];
+
   return (
-    <section className="relative mt-8 bg-gray-800 py-16 md:py-20 px-6 md:px-10 font-sans">
+    <section className="relative mt-8 bg-gray-900 py-16 md:py-20 px-6 md:px-10 font-sans">
       {/* Section Header */}
-      <h2 className="text-3xl md:text-4xl font-serif text-center font-bold text-lime-600 leading-tight mb-4">
-        Why Choose Agrios Market
+      <h2 className="text-3xl md:text-4xl font-serif text-center font-bold text-lime-500 leading-tight mb-4">
+        Why Choose AgroPulse
       </h2>
-      <h6 className="text-white text-center text-lg font-semibold mb-12">
-        Our Farm Benefits
+      <h6 className="text-gray-200 text-center text-lg font-semibold mb-12">
+        Unlocking Benefits for Modern Farmers
       </h6>
 
       {/* Content Grid */}
       <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-10 items-center">
         {/* Left Image */}
-        <div className="relative">
+        <div className="relative group overflow-hidden rounded-2xl shadow-2xl">
           <img
-            src="/assets/sections (1).png" 
+            src="/assets/sections (1).png"
             alt="Hydroponics and urban farming system"
-            className="w-full h-full object-cover rounded-2xl shadow-2xl hover:scale-105 transition-transform duration-700"
-              loading="lazy"
+            className="w-full h-full object-cover transform transition-transform duration-700 group-hover:scale-105"
+            loading="lazy"
           />
 
-          {/* Caption Overlay (optional, but looks elegant) */}
-          <div className="absolute bottom-6 left-6 bg-lime-600 text-white px-5 py-3 rounded-lg shadow-md bg-opacity-90 backdrop-blur-sm">
-            <h3 className="text-lg font-semibold leading-snug">
+          <div className="absolute bottom-4 left-4 md:bottom-6 md:left-6 bg-lime-600 text-white px-4 py-2 md:px-5 md:py-3 rounded-lg shadow-md bg-opacity-90 backdrop-blur-sm transition-all duration-500 translate-y-4 group-hover:translate-y-0 opacity-0 group-hover:opacity-100">
+            <h3 className="text-base md:text-lg font-semibold leading-snug">
               Hydroponics & Urban Farming <br />
               <span className="text-sm font-normal text-gray-200">
-                The Future of Food
+                Innovating Agriculture for Tomorrow
               </span>
             </h3>
           </div>
@@ -38,63 +60,36 @@ export default function WhyChooseUs() {
         {/* Right Text Section */}
         <div>
           <p className="text-gray-300 text-base mb-8 leading-relaxed">
-            At Agrios, we blend time-tested farming traditions with modern
-            sustainable practices. Our goal is simple — to cultivate food that’s
-            pure, ethical, and nourishing for both people and the planet.
+            At AgroPulse, we combine traditional farming wisdom with modern
+            technology to empower smallholder farmers, improve crop quality,
+            and create sustainable, profitable outcomes for communities.
           </p>
 
           <ul className="space-y-6">
-            <li className="flex items-start gap-3">
-              <span className="bg-lime-500 text-white rounded-full p-2 mt-1 shadow-md">
-                ✓
-              </span>
-              <div>
-                <h4 className="font-semibold text-lg text-white">
-                  Quality Organic Food
-                </h4>
-                <p className="text-gray-400 text-sm">
-                  We grow our produce naturally — chemical-free, nutrient-rich,
-                  and full of authentic farm flavor.
-                </p>
-              </div>
-            </li>
-
-            <li className="flex items-start gap-3">
-              <span className="bg-yellow-400 text-black rounded-full p-2 mt-1 shadow-md">
-                ✓
-              </span>
-              <div>
-                <h4 className="font-semibold text-lg text-white">
-                  Professional Farmers
-                </h4>
-                <p className="text-gray-400 text-sm">
-                  Experienced hands and dedicated hearts — our team brings
-                  passion and precision to every harvest.
-                </p>
-              </div>
-            </li>
-
-            <li className="flex items-start gap-3">
-              <span className="bg-green-500 text-white rounded-full p-2 mt-1 shadow-md">
-                ✓
-              </span>
-              <div>
-                <h4 className="font-semibold text-lg text-white">
-                  Sustainable Practices
-                </h4>
-                <p className="text-gray-400 text-sm">
-                  From soil care to water recycling, every method we use honors
-                  nature’s balance and future generations.
-                </p>
-              </div>
-            </li>
+            {benefits.map((item, index) => (
+              <motion.li
+                key={index}
+                className="flex items-start gap-3"
+                custom={index}
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true }}
+                variants={listVariants}
+              >
+                <span className={`${item.color} rounded-full p-2 mt-1 shadow-md`}>✓</span>
+                <div>
+                  <h4 className="font-semibold text-lg text-white">{item.title}</h4>
+                  <p className="text-gray-400 text-sm">{item.desc}</p>
+                </div>
+              </motion.li>
+            ))}
           </ul>
 
           <Link
             to="#"
-            className="inline-block mt-10 bg-lime-600 hover:bg-lime-700 text-white px-8 py-3 rounded-md font-semibold transition-all duration-300 shadow-md"
+            className="inline-block mt-10 bg-lime-500 hover:bg-lime-600 text-white px-8 py-3 rounded-md font-semibold transition-all duration-300 shadow-lg hover:shadow-xl"
           >
-            Discover More
+            Discover Our Approach
           </Link>
         </div>
       </div>
