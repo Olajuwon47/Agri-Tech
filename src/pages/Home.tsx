@@ -67,7 +67,7 @@ export default function HeroCarousel() {
                 to="/account"
                 className="px-8 py-3 rounded-lg bg-yellow-400 hover:bg-yellow-300 text-gray-900 text-lg font-semibold shadow-xl transition-all max-sm:text-sm max-sm:px-5 max-sm:py-2"
               >
-                Join AgroPulse
+                Join Agro farm 
               </Link>
             </div>
           </div>
