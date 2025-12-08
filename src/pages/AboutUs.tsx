@@ -62,7 +62,7 @@ export default function AboutUs() {
         </div>
 
         {/* Main Section */}
-        <div className="grid md:grid-cols-2 gap-8 sm:gap-10 md:gap-12 mb-14 sm:mb-16">
+        <div className="grid md:grid-cols-2 gap-8 sm:gap-10 md:gap-12 mt-7 sm:mb-16">
           <motion.div whileHover={{ scale: 1.05 }} className="relative">
             <img
               src="/assets/sections (1).png"

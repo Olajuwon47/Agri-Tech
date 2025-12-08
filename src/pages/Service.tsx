@@ -86,11 +86,11 @@ export default function Service() {
 
             {/* Benefits Section */}
             <div className="mt-10 grid sm:grid-cols-2 gap-6">
-              <div className="bg-white p-6 rounded-2xl shadow-sm">
+              <div className="bg-white p-4 rounded-2xl shadow-sm">
                     <img
                 alt="Company Logo"
                 src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrTr8DpgTcqhRml1Wt5NV34TbKkE7HU77uNQ&s"
-                className="h-28 w-100 transition-transform hover:scale-105"
+                className="h-28 w-64 transition-transform hover:scale-105"
                   loading="lazy"
               />
                 <h4 className="text-lg font-semibold text-gray-900 mb-2">
@@ -100,11 +100,11 @@ export default function Service() {
                   Get smart analytics on soil health, weather, and crop yield powered by IoT sensors and predictive models.
                 </p>
               </div>
-              <div className="bg-white p-6 rounded-2xl shadow-sm">
+              <div className="bg-white p-4 rounded-2xl shadow-sm">
                     <img
                 alt="Company Logo"
                 src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzYv0WULoCTVIl_0JBWSxw6v-1b6GRYURXcQ&s"
-                className="h-28 w-100 transition-transform hover:scale-105"
+                className="h-28 w-64 transition-transform hover:scale-105"
                   loading="lazy"
               />
                 <h4 className="text-lg font-semibold text-gray-900 mb-2">

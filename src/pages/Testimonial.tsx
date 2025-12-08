@@ -42,12 +42,7 @@ const testimonials: TestimonialType[] = [
     image: "https://images.unsplash.com/photo-1585478259645-0356b8042ae8?w=150&h=150&fit=crop&crop=face",
     quote: "Automated climate control reduced our energy costs by 25% while keeping growing conditions perfect year-round.",
   },
-  {
-    name: "Emeka Uchenna",
-    title: "Coffee Grower",
-    image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop&crop=face",
-    quote: "Early crop disease detection saved my harvest. Immediate alerts helped me act before it spread.",
-  },
+
   {
     name: "Grace Okafor",
     title: "Sustainable Farmer",
@@ -60,12 +55,7 @@ const testimonials: TestimonialType[] = [
     image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop&crop=face",
     quote: "Livestock monitoring helps track herd health and optimize feeding. Milk production rose by 30%.",
   },
-  {
-    name: "Chiamaka Nwosu",
-    title: "Hydroponics Specialist",
-    image: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=150&h=150&fit=crop&crop=face",
-    quote: "Water analytics cut consumption by 60% and boosted my hydroponic lettuce production.",
-  },
+
   {
     name: "James Adekunle",
     title: "Agricultural Educator",
